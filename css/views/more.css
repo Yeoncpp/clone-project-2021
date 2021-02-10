@@ -1,0 +1,28 @@
+.more-suggestions {
+    font-weight: 500;
+    color: rgb(41, 41, 41);
+    margin-top: 25px;
+    padding: 25px 0px;
+    border-top: var(--main-border);
+}
+
+.more-suggestions__icons {
+    margin-top: 25px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    width:55%;
+}
+
+.more-suggestions__icons-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.more-suggestions__icons-content img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

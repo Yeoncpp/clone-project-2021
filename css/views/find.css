@@ -1,0 +1,147 @@
+.recommend-friends {
+    margin: 25px 0px;
+    padding: 20px 0px;
+    border-top: var(--main-border);
+    border-bottom: var(--main-border);
+}
+
+.recommend-friends__title {
+    font-weight: 500;
+    color: rgb(41, 41, 41);
+}
+
+.recommend-friends__body {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(87, 87, 87);
+    text-align: center;
+    margin: 80px 0px;
+}
+
+.open_chat_right {
+    top: 0px;
+    margin-left: 0px;
+}
+
+.open-chat__header {
+    display: flex;
+    justify-content: space-between;
+    color:  rgb(87, 87, 87);
+    font-weight: 450;
+    margin-bottom: 25px;
+}
+
+.open-chat__header span {
+    opacity: 0.7;
+}
+
+.open-post__members img {
+    width:15px;
+    height: 15px;
+    border-radius: 7.5px;
+}
+
+.open-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.open-post__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.open-post__hashtag {
+    text-transform: uppercase;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.open-post__members {
+    display: flex;
+    margin-top: 3px;
+    align-items: center;
+}
+
+.open_post__members-count {
+    font-size: 13px;
+    opacity: 0.7;
+    margin-left: 5px;
+}
+
+.open-post__members .divider {
+    width: 1px;
+    height: 10px;
+    background-color:  rgb(97, 97, 97);
+    margin: 0px 5px;
+}
+
+.open_post__members-status {
+    font-size: 14px;
+    color: palevioletred;
+    font-weight: bold;
+}
+
+.open-post__column:last-child {
+    position: relative;
+}
+
+.open-post__column:last-child img {
+    width:120px;
+    height: 120px;
+    border-radius: 18px;
+}
+
+.open-post__pic-heart {
+    display: flex;
+    font-size: 12px;
+    padding: 6px 7px;
+    border-radius: 10px;
+    background-color: rgb(78, 78, 78, 0.9);
+    color: white;
+    position: absolute;
+    left: 68px;
+    bottom: 11px;
+}
+
+.open-post__pic-heart span {
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+@keyframes heartBeat {
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: scale(1.2);
+        color:rgb(252, 135, 193);
+    }
+    100%{
+        transform: none;
+    }
+}
+
+@keyframes heartClick {
+    from{
+        transform: none;
+    }
+    to{
+        color:rgb(252, 135, 193);
+    }
+}
+
+
+.open-post__pic-heart:hover i {
+    /* 애니메이션 가속화가 있을거다 라고 미리 알려줌으로 부드러워짐 */
+    will-change: transform;
+    animation: heartBeat 0.8s ease-in-out infinite;
+}
+
+/*
+.open-post__pic-heart:active i {
+    animation: heartClick 0.2s ease-in-out forwards;
+}
+*/

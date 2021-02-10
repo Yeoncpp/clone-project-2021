@@ -1,0 +1,47 @@
+.alt-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 3px;
+    position: fixed;
+    top: 35px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.alt-header__column {
+    width: 33%;
+    font-weight: bold;
+}
+
+.alt-header__column:first-child {
+    display: flex;
+    justify-items: flex-start;
+    margin-left: 15px;
+}
+.alt-header__column .fa-wifi {
+    margin-left: 5px;
+}
+
+
+.alt-header__column:nth-child(2) span {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.alt-header__column:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.alt-header__column:last-child i {
+    margin-left: 15px;
+}
+
+.status-bar .fa-battery-three-quarters {
+    margin-right: 5px;
+    margin-left: 5px;
+}

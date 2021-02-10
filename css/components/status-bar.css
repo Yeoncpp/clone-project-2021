@@ -1,0 +1,40 @@
+.status-bar {
+    display: flex;
+    justify-content: center;
+    padding: 5px 3px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #9FB9C6;
+    z-index: 2;
+}
+.status-bar__column {
+    width: 33%;
+    font-weight: bold;
+}
+
+.status-bar__column:first-child {
+    display: flex;
+    justify-items: flex-start;
+}
+.status-bar__column .fa-wifi {
+    margin-left: 5px;
+}
+
+
+.status-bar__column:nth-child(2) span {
+    display: flex;
+    justify-content: center;
+}
+
+.status-bar__column:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.status-bar .fa-battery-three-quarters {
+    margin-right: 5px;
+    margin-left: 5px;
+}

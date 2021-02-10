@@ -1,0 +1,13 @@
+.chats__notice {
+    margin-top: 8px;
+    background-color: tomato;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    border-radius: 12.5px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 400;
+    margin-left: 10px;
+}
